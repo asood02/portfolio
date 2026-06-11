@@ -4,11 +4,11 @@
     <script>document.documentElement.classList.add('js')</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects — Aryan Sood</title>
-    <meta name="description" content="Selected mechanical engineering projects by Aryan Sood: product realization, precision machining, aerospace flight hardware, robotics, and composites.">
+    <title>Projects, Aryan Sood</title>
+    <meta name="description" content="Selected mechanical engineering projects by Aryan Sood: flight hardware, precision machining, robotics, composites, and product realization.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,366 +36,422 @@
     <main class="main-content">
         <span class="section-label reveal">Selected Work</span>
         <h1 class="page-title reveal">Projects</h1>
-        <p class="page-intro reveal">A cross-section of product realization, precision manufacturing, flight hardware, and robotics. Click any project for the full engineering story.</p>
+        <p class="page-intro reveal">Ordered by engineering depth, from flight-qualified hardware and precision machining to mechatronics and product design. Select any project for the full process.</p>
 
-        <div class="grid">
+        <div class="work-list">
 
-            <div class="card reveal" onclick="openModal('modal-primedrive')">
-                <div class="card-img-wrapper">
-                    <svg class="cover-svg" viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="PrimeDrive in-transit concierge">
-                        <defs>
-                            <linearGradient id="pd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a0d0d"/><stop offset="1" stop-color="#8c1515"/></linearGradient>
-                        </defs>
+            <div class="work-item reveal" onclick="openModal('modal-curios')">
+                <div class="work-num">01</div>
+                <div class="work-main">
+                    <span class="work-cat">Aerospace <span class="dot">·</span> Flight Hardware</span>
+                    <h3 class="work-title">CuRIOS Detector Interfaces</h3>
+                    <p class="work-desc">Kinematic mounting and thermal isolation integrating a Sony IMX455 detector into a 16U CubeSat, qualified for 12G launch loads and thermal vacuum.</p>
+                </div>
+                <div class="work-thumb"><img src="images/cubesat.jpg" alt="CuRIOS CubeSat"></div>
+            </div>
+
+            <div class="work-item reveal" onclick="openModal('modal-primedrive')">
+                <div class="work-num">02</div>
+                <div class="work-main">
+                    <span class="work-cat">Product Design <span class="dot">·</span> ME310 Capstone</span>
+                    <h3 class="work-title">PrimeDrive, In-Transit Concierge</h3>
+                    <p class="work-desc">Industry-sponsored capstone. I led the mechanical architecture of an in-car concierge unit that completes luxury hotel check-in during the ride.</p>
+                </div>
+                <div class="work-thumb">
+                    <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="PrimeDrive concept">
+                        <defs><linearGradient id="pd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a0d0d"/><stop offset="1" stop-color="#7a1414"/></linearGradient></defs>
                         <rect width="320" height="200" fill="url(#pd)"/>
-                        <g stroke="#f4e9d8" stroke-width="1" opacity="0.12">
-                            <path d="M0 50H320M0 100H320M0 150H320M80 0V200M160 0V200M240 0V200"/>
-                        </g>
+                        <g stroke="#f4e9d8" stroke-width="1" opacity="0.12"><path d="M0 50H320M0 100H320M0 150H320M80 0V200M160 0V200M240 0V200"/></g>
                         <rect x="106" y="58" width="108" height="70" rx="9" fill="none" stroke="#f4e9d8" stroke-width="2.5" opacity="0.95"/>
                         <circle cx="160" cy="84" r="9" fill="none" stroke="#f4e9d8" stroke-width="2" opacity="0.95"/>
-                        <g stroke="#f4e9d8" stroke-width="2" fill="none" opacity="0.85" stroke-linecap="round">
-                            <path d="M150 108 a16 16 0 0 1 20 0"/><path d="M144 102 a26 26 0 0 1 32 0"/>
-                        </g>
-                        <text x="160" y="166" text-anchor="middle" fill="#f4e9d8" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="3">PRIMEDRIVE</text>
+                        <g stroke="#f4e9d8" stroke-width="2" fill="none" opacity="0.85" stroke-linecap="round"><path d="M150 108 a16 16 0 0 1 20 0"/><path d="M144 102 a26 26 0 0 1 32 0"/></g>
                     </svg>
                 </div>
-                <span class="card-meta">PRODUCT DESIGN // ME310 CAPSTONE</span>
-                <h3 class="card-title">PrimeDrive: In-Transit Concierge</h3>
-                <p>Industry-sponsored capstone. I led the mechanical architecture of an in-car concierge unit that brings luxury hotel check-in to the guest during the ride.</p>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-lineage')">
-                <div class="card-img-wrapper"><img src="images/lineage_final.png" style="display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line);margin-bottom:8px" alt="Finished Lineage watch box holding an Omega Seamaster"></div>
-                <span class="card-meta">MANUFACTURING // ME318</span>
-                <h3 class="card-title">Vansh — Lineage Watch Box</h3>
-                <p>A CNC-machined aluminum &amp; ABS watch box engraved with a Suryavanshi mandala. Multi-material toolpathing, precision fits, and a sandblasted marble finish.</p>
+            <div class="work-item reveal" onclick="openModal('modal-baffles')">
+                <div class="work-num">03</div>
+                <div class="work-main">
+                    <span class="work-cat">Aerospace <span class="dot">·</span> Mechanisms</span>
+                    <h3 class="work-title">Deployable Light-Shield Baffles</h3>
+                    <p class="work-desc">A zero-backlash, spring-driven deployment mechanism validated by nonlinear Abaqus FEA and space-qualified through thermal-vacuum cycling.</p>
+                </div>
+                <div class="work-thumb"><img src="images/baffle.jpg" alt="Deployable baffle"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-curios')">
-                <div class="card-img-wrapper"><img src="images/cubesat.jpg" class="card-img" alt="CuRIOS CubeSat"></div>
-                <span class="card-meta">AEROSPACE // INTEGRATION</span>
-                <h3 class="card-title">CuRIOS: Mechanical Interfaces</h3>
-                <p>Kinematic mounting and thermal isolation for a 16U CubeSat detector. Qualified for 12G launch loads and TVAC.</p>
+            <div class="work-item reveal" onclick="openModal('modal-alef')">
+                <div class="work-num">04</div>
+                <div class="work-main">
+                    <span class="work-cat">Composites <span class="dot">·</span> Flight Prototype</span>
+                    <h3 class="work-title">Alef eVTOL Prototype</h3>
+                    <p class="work-desc">Carbon-fiber manufacturing by resin infusion and suspension validation for a flying-car flight prototype at Alef Aeronautics.</p>
+                </div>
+                <div class="work-thumb"><img src="images/alef.jpg" alt="Alef eVTOL"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-alef')">
-                <div class="card-img-wrapper"><img src="images/alef.jpg" class="card-img" alt="Alef eVTOL"></div>
-                <span class="card-meta">AUTOMOTIVE // COMPOSITES</span>
-                <h3 class="card-title">Alef eVTOL Prototype</h3>
-                <p>Carbon-fiber manufacturing (VARTM) and suspension validation for a flying-car flight prototype.</p>
+            <div class="work-item reveal" onclick="openModal('modal-lineage')">
+                <div class="work-num">05</div>
+                <div class="work-main">
+                    <span class="work-cat">Precision Machining <span class="dot">·</span> ME318</span>
+                    <h3 class="work-title">Vansh, the Lineage Watch Box</h3>
+                    <p class="work-desc">A CNC-machined aluminum and ABS watch box carrying a Suryavanshi mandala. Multi-material toolpathing, precision fits, and a sandblasted marble finish.</p>
+                </div>
+                <div class="work-thumb"><img src="images/lineage_final.png" alt="Lineage watch box"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-baffles')">
-                <div class="card-img-wrapper"><img src="images/baffle.jpg" class="card-img" alt="Deployable baffle"></div>
-                <span class="card-meta">AEROSPACE // MECHANISMS</span>
-                <h3 class="card-title">Deployable Light-Shields</h3>
-                <p>Zero-backlash deployment mechanism, validated by nonlinear Abaqus FEA and space qualification.</p>
+            <div class="work-item reveal" onclick="openModal('modal-lasso')">
+                <div class="work-num">06</div>
+                <div class="work-main">
+                    <span class="work-cat">Defense Tech <span class="dot">·</span> Dynamics</span>
+                    <h3 class="work-title">Pneumatic Lasso &amp; Breakaway Shell</h3>
+                    <p class="work-desc">A ruggedized pneumatic trigger mechanism and an energy-dispersal breakaway shell for non-lethal defense, tuned through dynamic simulation.</p>
+                </div>
+                <div class="work-thumb"><img src="images/lasso.jpg" alt="Pneumatic lasso"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-lasso')">
-                <div class="card-img-wrapper"><img src="images/lasso.jpg" class="card-img" alt="Pneumatic lasso"></div>
-                <span class="card-meta">DEFENSE TECH // DYNAMICS</span>
-                <h3 class="card-title">Pneumatic Lasso &amp; Breakaway Shell</h3>
-                <p>Ruggedized trigger mechanism and energy-dispersal shell for non-lethal defense.</p>
+            <div class="work-item reveal" onclick="openModal('modal-soft')">
+                <div class="work-num">07</div>
+                <div class="work-main">
+                    <span class="work-cat">Soft Robotics <span class="dot">·</span> ME303</span>
+                    <h3 class="work-title">Pneumatic Venus Flytrap</h3>
+                    <p class="work-desc">A hyperelastic Ecoflex actuator with autonomous proximity capture, modeled in Abaqus with a Neo-Hookean material law.</p>
+                </div>
+                <div class="work-thumb"><img src="images/flytrap.jpg" alt="Soft robotic flytrap"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-nozzle')">
-                <div class="card-img-wrapper"><img src="images/nozzle.jpg" class="card-img" alt="DIW nozzle"></div>
-                <span class="card-meta">MICROFLUIDICS // CFD</span>
-                <h3 class="card-title">Multimaterial DIW Printhead</h3>
-                <p>CFD-optimized nozzle for viscoelastic material voxelation. Switching waste reduced 45%.</p>
+            <div class="work-item reveal" onclick="openModal('modal-nozzle')">
+                <div class="work-num">08</div>
+                <div class="work-main">
+                    <span class="work-cat">Microfluidics <span class="dot">·</span> CFD</span>
+                    <h3 class="work-title">Multimaterial DIW Printhead</h3>
+                    <p class="work-desc">A CFD-optimized direct-ink-writing nozzle for viscoelastic material voxelation that reduced switching waste by 45 percent.</p>
+                </div>
+                <div class="work-thumb"><img src="images/nozzle.jpg" alt="DIW nozzle"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-soft')">
-                <div class="card-img-wrapper"><img src="images/flytrap.jpg" class="card-img" alt="Soft robotic flytrap"></div>
-                <span class="card-meta">SOFT ROBOTICS // ME303</span>
-                <h3 class="card-title">Pneumatic Venus Flytrap</h3>
-                <p>Hyperelastic Ecoflex actuator with autonomous proximity capture, modeled in Abaqus.</p>
+            <div class="work-item reveal" onclick="openModal('modal-prick')">
+                <div class="work-num">09</div>
+                <div class="work-main">
+                    <span class="work-cat">Medical Device <span class="dot">·</span> MECENG 117</span>
+                    <h3 class="work-title">PRICK, Kyphoplasty Interface</h3>
+                    <p class="work-desc">Electro-stimulation embedded in vertebral bone cement for post-operative pain relief, with a full FDA Class III regulatory roadmap.</p>
+                </div>
+                <div class="work-thumb"><img src="images/prick.jpg" alt="PRICK medical device"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-prick')">
-                <div class="card-img-wrapper"><img src="images/prick.jpg" class="card-img" alt="PRICK medical device"></div>
-                <span class="card-meta">MEDICAL DEVICE // MECENG 117</span>
-                <h3 class="card-title">PRICK: Kyphoplasty Interface</h3>
-                <p>Electro-stimulation embedded in bone cement for post-op spinal pain. FDA Class III roadmap.</p>
+            <div class="work-item reveal" onclick="openModal('modal-tennis')">
+                <div class="work-num">10</div>
+                <div class="work-main">
+                    <span class="work-cat">Mechatronics <span class="dot">·</span> PID Control</span>
+                    <h3 class="work-title">Autonomous Ball Launcher</h3>
+                    <p class="work-desc">A dual-flywheel launcher with an automatic feeder, cascaded PID control, and current-based jam detection on an ESP32.</p>
+                </div>
+                <div class="work-thumb"><img src="images/launcher.jpg" alt="Ball launcher"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-tennis')">
-                <div class="card-img-wrapper"><img src="images/launcher.jpg" class="card-img" alt="Ball launcher"></div>
-                <span class="card-meta">MECHATRONICS // PID</span>
-                <h3 class="card-title">Autonomous Ball Launcher</h3>
-                <p>Dual-flywheel launcher with cascaded PID control and auto-indexing on an ESP32.</p>
+            <div class="work-item reveal" onclick="openModal('modal-narwhal')">
+                <div class="work-num">11</div>
+                <div class="work-main">
+                    <span class="work-cat">Precision Machining <span class="dot">·</span> ME318</span>
+                    <h3 class="work-title">The Narwhal Bottle Opener</h3>
+                    <p class="work-desc">A continuous organic form chosen to demand true 3-axis machining, finished with a scallop toolpath that mimics skin texture.</p>
+                </div>
+                <div class="work-thumb"><img src="images/narwhal.png" alt="Narwhal bottle opener"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-cast')">
-                <div class="card-img-wrapper"><img src="images/stand.jpg" class="card-img" alt="Time and Tide watch display"></div>
-                <span class="card-meta">MANUFACTURING // ME203</span>
-                <h3 class="card-title">Time &amp; Tide: Watch Display</h3>
-                <p>Sand-cast bronze and 5-axis-milled brass sculpture with an ash-wood boat.</p>
+            <div class="work-item reveal" onclick="openModal('modal-cast')">
+                <div class="work-num">12</div>
+                <div class="work-main">
+                    <span class="work-cat">Manufacturing <span class="dot">·</span> ME203</span>
+                    <h3 class="work-title">Time and Tide Watch Display</h3>
+                    <p class="work-desc">A luxury display sculpture in sand-cast bronze and 5-axis-milled brass, with an ash-wood boat and custom threaded interfaces.</p>
+                </div>
+                <div class="work-thumb"><img src="images/stand.jpg" alt="Time and Tide watch display"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-watch')">
-                <div class="card-img-wrapper"><img src="images/watch_build.jpg" class="card-img" alt="Submariner homage build"></div>
-                <span class="card-meta">HOROLOGY</span>
-                <h3 class="card-title">Submariner-Homage Diver</h3>
-                <p>Precision assembly of an NH35A diver build, regulated to ±5s/day with 300m-style sealing.</p>
+            <div class="work-item reveal" onclick="openModal('modal-watch')">
+                <div class="work-num">13</div>
+                <div class="work-main">
+                    <span class="work-cat">Horology</span>
+                    <h3 class="work-title">Submariner-Homage Diver</h3>
+                    <p class="work-desc">A hand-assembled dive watch on a Seiko NH35A movement, regulated to within 5 seconds per day with dive-grade sealing.</p>
+                </div>
+                <div class="work-thumb"><img src="images/watch_build.jpg" alt="Submariner homage build"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-anemo')">
-                <div class="card-img-wrapper"><img src="images/anemo.jpg" class="card-img" alt="Anemometer modeling"></div>
-                <span class="card-meta">INSTRUMENTATION // ME103</span>
-                <h3 class="card-title">Predictive Wind Modeling</h3>
-                <p>Wind-tunnel calibration of a vertical-axis anemometer with R² &gt; 0.98 regression.</p>
+            <div class="work-item reveal" onclick="openModal('modal-guitar')">
+                <div class="work-num">14</div>
+                <div class="work-main">
+                    <span class="work-cat">Generative Design <span class="dot">·</span> ME227</span>
+                    <h3 class="work-title">Algorithmic Guitar Stand</h3>
+                    <p class="work-desc">A Fusion 360 generative-design structure optimized for a 40 lbf load case using measured PLA material data.</p>
+                </div>
+                <div class="work-thumb"><img src="images/guitar_stand.jpg" alt="Generative guitar stand"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-guitar')">
-                <div class="card-img-wrapper"><img src="images/guitar_stand.jpg" class="card-img" alt="Generative guitar stand"></div>
-                <span class="card-meta">GENERATIVE DESIGN // ME227</span>
-                <h3 class="card-title">Algorithmic Guitar Stand</h3>
-                <p>Fusion 360 generative optimization for a 40 lbf load case on custom PLA data.</p>
+            <div class="work-item reveal" onclick="openModal('modal-anemo')">
+                <div class="work-num">15</div>
+                <div class="work-main">
+                    <span class="work-cat">Instrumentation <span class="dot">·</span> ME103</span>
+                    <h3 class="work-title">Predictive Wind Modeling</h3>
+                    <p class="work-desc">Wind-tunnel calibration of a vertical-axis anemometer, with a regression model reaching an R-squared above 0.98.</p>
+                </div>
+                <div class="work-thumb"><img src="images/anemo.jpg" alt="Anemometer modeling"></div>
             </div>
 
-            <div class="card reveal" onclick="openModal('modal-flicc')">
-                <div class="card-img-wrapper"><img src="images/flicc.jpg" class="card-img" alt="Flicc smart switch"></div>
-                <span class="card-meta">PRODUCT DESIGN // IOT</span>
-                <h3 class="card-title">Flicc: Smart Switch Actuator</h3>
-                <p>Retrofit servo mechanism with ESP32-MQTT and Alexa voice integration.</p>
+            <div class="work-item reveal" onclick="openModal('modal-flicc')">
+                <div class="work-num">16</div>
+                <div class="work-main">
+                    <span class="work-cat">Product Design <span class="dot">·</span> IoT</span>
+                    <h3 class="work-title">Flicc, Smart Switch Actuator</h3>
+                    <p class="work-desc">A non-intrusive retrofit that mechanically toggles existing wall switches, with ESP32 and MQTT for voice control.</p>
+                </div>
+                <div class="work-thumb"><img src="images/flicc.jpg" alt="Flicc smart switch"></div>
             </div>
 
         </div>
 
         <footer class="page-footer">
-            <span>© 2026 Aryan Sood</span>
-            <span><a href="mailto:asood02@stanford.edu">Email</a> · <a href="https://github.com/asood02" target="_blank" rel="noopener">GitHub</a></span>
+            <span>Aryan Sood, 2026</span>
+            <span><a href="mailto:asood02@stanford.edu">Email</a> &nbsp; <a href="https://github.com/asood02" target="_blank" rel="noopener">GitHub</a></span>
         </footer>
     </main>
 
-    <!-- ============ MODALS ============ -->
-
-    <div id="modal-primedrive" class="modal" onclick="closeModal(this)">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
-            <h2>PrimeDrive: The In-Transit Concierge</h2>
-            <span class="modal-meta">Stanford ME310 // Industry-Sponsored Capstone // Product Realization</span>
-            <span class="team-tag">Team "Hotels" (ME310 cohort) — I led the mechanical design and hardware integration; teammates drove UX, software, and the staff/guest interfaces.</span>
-            <div class="modal-body">
-                <p>Luxury hotels promise a seamless, personal arrival, yet the experience often begins with a queue: check-in waits reach <strong>20–50 minutes</strong>, and guest satisfaction drops by roughly 50% once a wait exceeds five minutes. Our team reframed the problem around the one calm, controlled moment that already exists before the lobby: <strong>the chauffeured car ride</strong> (offered by 85%+ of luxury properties). <strong>PrimeDrive</strong> is an in-vehicle concierge unit that completes check-in in transit, so the guest steps out of the car already checked in, keyed in, and known by name.</p>
-
-                <h3>My Role — Mechanical Architecture</h3>
-                <p>I owned the physical product: the concierge unit that lives in the rear cabin and carries every interactive subsystem. I developed the full enclosure in CAD and drove it from concept to a working, demoed prototype, integrating a touchscreen, a 4K camera for the live concierge video link, an ID/passport + QR scanner, an integrated payment terminal, and an NFC/RFID room-key module into one cohesive, premium housing.</p>
-                <ul>
-                    <li><strong>Deployable display:</strong> designed an articulating, stow-and-present screen arm so the unit folds away discreetly and presents to a seated rear passenger at a comfortable viewing angle, packaged around real cabin and seat-back geometry.</li>
-                    <li><strong>Modular hardware bay:</strong> laid out a serviceable internal chassis that locates the camera, scanner, payment reader, and key module on a common datum, with routed cable management and ventilation for the compute and screen.</li>
-                    <li><strong>Key-issuance mechanism:</strong> integrated the NFC tap-to-program and physical key-card handoff into the fascia so the handover feels intentional and tamper-evident.</li>
-                    <li><strong>Mounting &amp; DFM:</strong> designed a vehicle-agnostic mounting interface and detailed the housing for low-volume manufacture (draft, wall thickness, fastener bosses) using 3D-printed iterations.</li>
-                </ul>
-
-                <h3>Prototyping the Form Factor</h3>
-                <p>Before converging on the seat-back console, I helped build and evaluate alternative delivery concepts — a mobile-robot unit and a drone hand-off — to pressure-test where and how to intercept the guest. Mapping the journey showed the car ride was the highest-value, lowest-friction intercept point, and the fixed in-cabin unit won on reliability, ergonomics, and trust.</p>
-
-                <h3>Outcome</h3>
-                <p>We delivered a functional prototype demonstrating the complete in-transit flow — video concierge, document scan, payment, and key issuance — and presented PrimeDrive to our industry partner. The concept extends naturally to shuttles and group pickups, cross-property partnerships, and airline/cruise transfers.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-lineage" class="modal" onclick="closeModal(this)">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
-            <h2>Vansh — The Lineage Watch Box</h2>
-            <span class="modal-meta">Stanford ME318 // 3-Axis CNC // Aluminum + ABS // Solo Project</span>
-            <span class="team-tag">A solo design-and-build. "Vansh" (वंश) means lineage — the box carries a Suryavanshi (Sun-descendant) mandala honoring my Himachali Sood heritage.</span>
-            <div class="modal-body">
-                <img src="images/lineage_final.png" class="card-img" style="border-radius:10px;border:1px solid var(--line);filter:none;margin-bottom:8px;aspect-ratio:auto" alt="Finished Lineage watch box holding an Omega Seamaster">
-                <p style="font-size:0.82rem;color:var(--muted);font-style:italic;margin-bottom:24px">Finished box: sandblasted 6061 base, sandblasted-ABS lid with machined Suryavanshi mandala, stainless dowel hinge, seating an Omega Seamaster Diver 300M.</p>
-
-                <p>I set out to machine a watch box worthy of my Omega Seamaster Diver 300M and the pieces I've built and collected — an object that doubles as a personal heirloom. After exploring organic directions (shells, gyroscopes, skull forms), I committed to a clean architectural box whose meaning lives in its lid: a <strong>Suryavanshi mandala</strong> machined in relief, a nod to lineage and clan.</p>
-
-                <div class="spec-row">
-                    <span class="spec">6061 ALUMINUM BASE</span>
-                    <span class="spec">ABS LID</span>
-                    <span class="spec">SS DOWEL HINGE</span>
-                    <span class="spec">0.5" FEM + BEM</span>
-                    <span class="spec">3× CLOSE-SLIDING + 1× PRESS FIT</span>
-                </div>
-
-                <h3>Design for Machinability</h3>
-                <p>Working within 3-axis constraints, I simplified the geometry so nearly everything could be cut with a 0.5" flat and ball end mill, reserving tighter detail only for the hinge and lid interface. I designed the open/close experience around a stainless dowel hinge and a deliberate tolerance scheme — <strong>three close-sliding fits and one press-fit</strong> — and modeled the mandala so every feature was provably machinable.</p>
-
-                <h3>CAM &amp; Machining</h3>
-                <ul>
-                    <li>Tuned toolpaths for cycle-time and verified all moves cleared 0.35" above the stock bottom; caught a potential spindle crash in simulation before it reached the machine.</li>
-                    <li>Calculated feeds and speeds independently for <strong>aluminum and ABS</strong> (including custom ABS tooling), with dedicated drilling and reaming operations for the hinge bores.</li>
-                    <li>The aluminum base came off the machine almost exactly as designed; I traced a minor internal-fillet mismatch to a true ball-mill diameter of 0.485" vs. the nominal 0.5" — a good lesson in tool runout vs. CAM assumptions.</li>
-                </ul>
-
-                <h3>Finishing — Turning a Defect into the Look</h3>
-                <p>Sandblasting the aluminum gave a clean, premium, parting-line-free exterior. The ABS lid finished rougher, with visible adaptive-clearing steps — so I leaned in: test sandblasting produced a <strong>limestone/marble aesthetic</strong>, making the machining lines read as intentional texture rather than flaws.</p>
-
-                <h3>Assembly &amp; Honest Reflection</h3>
-                <p>The stainless shaft transition-fit cleanly into the aluminum, but pressing it through the softer ABS fractured the material; I faced, filed, and re-drilled to recover, and the shaft now juts proudly from the sides for a robust, industrial look. The lid closes with a satisfying snap and opens easily. The one thing I'd change next: the lid won't hold itself open for display, so a detented or friction hinge is the clear next iteration.</p>
-
-                <div class="modal-figs">
-                    <figure>
-                        <img src="images/lineage_proto1.jpg" alt="3D-printed prototype, open">
-                        <figcaption>3D-printed prototype — validating hinge feel and tray geometry.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/lineage_proto2.jpg" alt="3D-printed prototype, closed">
-                        <figcaption>Prototype used to lock placement, tolerances, and the open/close experience.</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- ===================== MODALS ===================== -->
 
     <div id="modal-curios" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
-            <h2>CuRIOS: Mechanical Interfaces</h2>
-            <span class="modal-meta">Space Payload Engineering // 16U Bus // 12G Qualification</span>
-            <span class="team-tag">Moving Universe Lab, UC Berkeley — payload mechanical lead.</span>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>CuRIOS Detector Interfaces</h2>
+            <span class="modal-meta">Space Payload Engineering <span class="dot">·</span> 16U Bus <span class="dot">·</span> 12G Qualification</span>
+            <span class="team-tag">Moving Universe Lab, UC Berkeley. I served as the payload mechanical lead.</span>
             <div class="modal-body">
-                <p>I led the mechanical realization of mounting interfaces to integrate a Sony IMX455 CMOS detector into a standard 16U CubeSat bus. The challenge was sub-millimeter alignment stability relative to the telescope bore-sight through a 12G Falcon 9 launch environment, while thermally isolating the detector to minimize dark-current noise.</p>
+                <p>I led the mechanical realization of the interfaces that integrate a Sony IMX455 CMOS detector into a standard 16U CubeSat bus. The defining challenge was holding sub-millimeter alignment relative to the telescope bore-sight through the 12G vibration environment of a Falcon 9 launch, while thermally isolating the detector to minimize dark-current noise.</p>
                 <h3>Engineering Strategy</h3>
-                <p>I engineered a kinematic-style mount to decouple the optical bench from chassis deformation, using G10 fiberglass standoffs for thermal resistance and keeping the detector within −10°C to +40°C while the bus ran hotter.</p>
+                <p>I engineered a kinematic-style mount to decouple the optical bench from chassis deformation, using G10 fiberglass standoffs for thermal resistance. This kept the detector within its operational window of negative 10 to positive 40 degrees Celsius while the surrounding bus electronics ran considerably hotter.</p>
                 <h3>Validation</h3>
                 <ul>
-                    <li>GD&amp;T (ASME Y14.5) tolerance analysis defining focal-plane flatness within 50 microns.</li>
-                    <li>Thermal-vacuum cycling (−40°C to +80°C) and random-vibration qualification.</li>
-                    <li>~100× detector-cost reduction by qualifying COTS hardware for high-fidelity science.</li>
+                    <li>GD&amp;T tolerance analysis (ASME Y14.5) defining focal-plane flatness within 50 microns.</li>
+                    <li>Thermal-vacuum cycling from negative 40 to positive 80 degrees Celsius and random-vibration qualification.</li>
+                    <li>Roughly 100 times detector-cost reduction by qualifying commercial hardware for high-fidelity science.</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-primedrive" class="modal" onclick="closeModal(this)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>PrimeDrive, the In-Transit Concierge</h2>
+            <span class="modal-meta">Stanford ME310 <span class="dot">·</span> Industry-Sponsored Capstone <span class="dot">·</span> Product Realization</span>
+            <span class="team-tag">Team Hotels (ME310 cohort). I led the mechanical design and hardware integration; teammates drove UX, software, and the staff and guest interfaces.</span>
+            <div class="modal-body">
+                <p>Luxury hotels promise a seamless, personal arrival, yet the experience often begins with a queue. Check-in waits can reach 20 to 50 minutes, and guest satisfaction drops by roughly half once a wait exceeds five minutes. Our team reframed the problem around the one calm, controlled moment that already exists before the lobby, the chauffeured car ride, which over 85 percent of luxury properties already provide. PrimeDrive is an in-vehicle concierge unit that completes check-in in transit, so the guest steps out of the car already checked in, keyed in, and greeted by name.</p>
+                <h3>My Role, Mechanical Architecture</h3>
+                <p>I owned the physical product: the concierge unit that lives in the rear cabin and carries every interactive subsystem. I developed the full enclosure in CAD and drove it from concept to a working, demonstrated prototype, integrating a touchscreen, a 4K camera for the live concierge link, an identity and QR scanner, an integrated payment terminal, and an NFC room-key module into one cohesive, premium housing.</p>
+                <ul>
+                    <li><strong>Deployable display.</strong> An articulating, stow-and-present screen arm folds the unit away discreetly and presents to a seated rear passenger at a comfortable viewing angle, packaged around real seat-back geometry.</li>
+                    <li><strong>Modular hardware bay.</strong> A serviceable internal chassis locates the camera, scanner, payment reader, and key module on a common datum, with routed cable management and ventilation for the compute and screen.</li>
+                    <li><strong>Key issuance.</strong> I integrated NFC tap-to-program and physical key-card handoff into the fascia so the handover feels intentional and tamper-evident.</li>
+                    <li><strong>Mounting and DFM.</strong> I designed a vehicle-agnostic mounting interface and detailed the housing for low-volume manufacture, iterating through 3D-printed prototypes.</li>
+                </ul>
+                <h3>Prototyping the Form Factor</h3>
+                <p>Before converging on the seat-back console, I helped build and evaluate a mobile-robot unit and a drone hand-off to pressure-test where and how to intercept the guest. Journey mapping showed the car ride was the highest-value, lowest-friction moment, and the fixed in-cabin unit won on reliability, ergonomics, and trust.</p>
+                <h3>Outcome</h3>
+                <p>We delivered a functional prototype demonstrating the complete in-transit flow, from video concierge through document scan, payment, and key issuance, and presented PrimeDrive to our industry partner. The concept extends naturally to shuttles and group pickups, cross-property partnerships, and airline and cruise transfers.</p>
             </div>
         </div>
     </div>
 
     <div id="modal-baffles" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
             <h2>Deployable Light-Shield Baffles</h2>
-            <span class="modal-meta">Space Mechanisms // Abaqus Nonlinear FEA // NASA GEVS</span>
+            <span class="modal-meta">Space Mechanisms <span class="dot">·</span> Abaqus Nonlinear FEA <span class="dot">·</span> NASA GEVS</span>
             <div class="modal-body">
-                <p>For time-domain astrophysics needing 21 Vega-magnitude sensitivity, stray-light rejection is a hard requirement. I designed a deployable light-shield that stows within 16U launch volume and extends reliably in orbit via a zero-backlash, spring-driven mechanism.</p>
+                <p>Time-domain astrophysics at 21 Vega-magnitude sensitivity makes stray-light rejection a hard requirement. I designed a deployable light-shield that stows within 16U launch volume and extends reliably in orbit using a zero-backlash, spring-driven mechanism.</p>
                 <h3>Nonlinear Analysis</h3>
-                <p>I ran exhaustive Abaqus FEA with mesh-independence studies, refining tetrahedral elements below 0.1" until hinge-joint stress concentrations converged within 2.5%. The structure cleared 12G static-equivalent launch loads with a Factor of Safety &gt; 1.5 against yield and buckling.</p>
+                <p>I ran exhaustive Abaqus FEA with mesh-independence studies, refining tetrahedral elements below 0.1 inches until hinge-joint stress concentrations converged within 2.5 percent. The structure cleared 12G static-equivalent launch loads with a factor of safety above 1.5 against yield and buckling.</p>
                 <h3>Qualification</h3>
-                <p>Space-qualified via TVAC cycling at UC Berkeley, with MoS₂ coatings to prevent cold-welding in vacuum.</p>
+                <p>The mechanism was space-qualified through thermal-vacuum cycling at UC Berkeley, using molybdenum-disulfide coatings to prevent cold-welding in vacuum.</p>
             </div>
         </div>
     </div>
 
     <div id="modal-alef" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
             <h2>Alef eVTOL Prototype</h2>
-            <span class="modal-meta">Composites // Automotive Chassis // Flight Hardware // VARTM</span>
-            <span class="team-tag">Alef Aeronautics — manufacturing &amp; structural validation intern.</span>
+            <span class="modal-meta">Composites <span class="dot">·</span> Automotive Chassis <span class="dot">·</span> Flight Hardware</span>
+            <span class="team-tag">Alef Aeronautics. Manufacturing and structural-validation intern.</span>
             <div class="modal-body">
-                <p>At Alef Aeronautics I owned mechanical realization of flight-capable eVTOL prototypes for the "Model A" program, bridging aerodynamic CAD and physical hardware.</p>
+                <p>At Alef Aeronautics I owned the mechanical realization of flight-capable eVTOL prototypes for the Model A program, bridging aerodynamic CAD and physical hardware.</p>
                 <h3>Advanced Manufacturing</h3>
-                <p>I managed end-to-end carbon-fiber layup and resin infusion (VARTM) for aerodynamic show models, achieving Class-A surfaces with automotive body fillers and sanding protocols to preserve laminar flow.</p>
+                <p>I managed end-to-end carbon-fiber layup and resin infusion (VARTM) for aerodynamic show models, achieving Class-A surfaces with automotive body fillers and disciplined sanding protocols to preserve laminar flow.</p>
                 <h3>Structural Validation</h3>
                 <p>I built and static-tested suspension systems against simulated ground-load profiles, identifying failure modes and validating the chassis against 1G takeoff and landing loads.</p>
             </div>
         </div>
     </div>
 
-    <div id="modal-lasso" class="modal" onclick="closeModal(this)">
+    <div id="modal-lineage" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
-            <h2>Pneumatic Lasso &amp; Breakaway Shell</h2>
-            <span class="modal-meta">Virtual Presenz // Fragmentation Mechanics // Defense Tech</span>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>Vansh, the Lineage Watch Box</h2>
+            <span class="modal-meta">Stanford ME318 <span class="dot">·</span> 3-Axis CNC <span class="dot">·</span> Aluminum and ABS <span class="dot">·</span> Solo</span>
+            <span class="team-tag">A solo design and build. "Vansh" means lineage; the box carries a Suryavanshi (Sun descendant) mandala honoring my Himachali Sood heritage.</span>
             <div class="modal-body">
-                <p>At Virtual Presenz I designed a ruggedized pneumatic lasso trigger mechanism and a novel autonomous breakaway shell for non-lethal defense, focused on reliable deployment and high-retention engagement.</p>
-                <h3>Mechanical Engineering</h3>
-                <p>I engineered shell fragmentation using energy-dispersal principles so internal hooks deploy instantly on kinetic impact, validating latching reliability through iterative high-velocity tension testing.</p>
-                <h3>Optimization</h3>
-                <p>I tuned the trigger kinematics with dynamic simulation for consistent deployment across firing pressures and environmental conditions.</p>
+                <img src="images/lineage_final.png" class="modal-hero" alt="Finished Lineage watch box holding an Omega Seamaster">
+                <p class="modal-cap">Finished box: sandblasted 6061 base, sandblasted-ABS lid with a machined Suryavanshi mandala, stainless dowel hinge, seating an Omega Seamaster Diver 300M.</p>
+                <p>I set out to machine a watch box worthy of my Omega Seamaster Diver 300M and the pieces I have built and collected, an object that doubles as a personal heirloom. After exploring organic directions such as shells, gyroscopes, and skull forms, I committed to a clean architectural box whose meaning lives in its lid: a Suryavanshi mandala machined in relief, a nod to lineage and clan.</p>
+                <div class="spec-row">
+                    <span class="spec">6061 Aluminum Base</span>
+                    <span class="spec">ABS Lid</span>
+                    <span class="spec">Stainless Dowel Hinge</span>
+                    <span class="spec">0.5 in FEM and BEM</span>
+                    <span class="spec">3 Sliding Fits, 1 Press Fit</span>
+                </div>
+                <h3>Design for Machinability</h3>
+                <p>Working within 3-axis constraints, I simplified the geometry so nearly everything could be cut with a 0.5 inch flat and ball end mill, reserving tighter detail only for the hinge and lid interface. I designed the open and close experience around a stainless dowel hinge with a deliberate tolerance scheme of three close-sliding fits and one press fit, and modeled the mandala so every feature was provably machinable.</p>
+                <h3>CAM and Machining</h3>
+                <ul>
+                    <li>Tuned toolpaths for cycle time and verified every move cleared 0.35 inches above the stock bottom, catching a potential spindle crash in simulation before it reached the machine.</li>
+                    <li>Calculated feeds and speeds independently for aluminum and ABS, including custom ABS tooling, with dedicated drilling and reaming for the hinge bores.</li>
+                    <li>The aluminum base came off the machine almost exactly as designed; I traced a minor internal-fillet mismatch to a true ball-mill diameter of 0.485 inches versus the nominal 0.5, a useful lesson in tool wear versus CAM assumptions.</li>
+                </ul>
+                <h3>Finishing, Turning a Defect into the Look</h3>
+                <p>Sandblasting the aluminum gave a clean, premium, parting-line-free exterior. The ABS lid finished rougher, with visible adaptive-clearing steps, so I leaned in. Test sandblasting produced a limestone and marble aesthetic, making the machining lines read as intentional texture rather than flaws.</p>
+                <h3>Assembly and Honest Reflection</h3>
+                <p>The stainless shaft transition-fit cleanly into the aluminum, but pressing it through the softer ABS fractured the material. I faced, filed, and re-drilled to recover, and the shaft now juts proudly from the sides for a robust, industrial look. The lid closes with a satisfying snap and opens easily. The one thing I would change next: the lid will not hold itself open for display, so a detented or friction hinge is the clear next iteration.</p>
+                <div class="modal-figs">
+                    <figure><img src="images/lineage_proto1.jpg" alt="3D-printed prototype, open"><figcaption>3D-printed prototype validating hinge feel and tray geometry.</figcaption></figure>
+                    <figure><img src="images/lineage_proto2.jpg" alt="3D-printed prototype, closed"><figcaption>Prototype used to lock placement, tolerances, and the open and close experience.</figcaption></figure>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="modal-nozzle" class="modal" onclick="closeModal(this)">
+    <div id="modal-lasso" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
-            <h2>Multimaterial DIW Printhead</h2>
-            <span class="modal-meta">Microfluidics // Ansys Fluent CFD</span>
-            <span class="team-tag">Team: Aryan Sood &amp; design cohort.</span>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>Pneumatic Lasso and Breakaway Shell</h2>
+            <span class="modal-meta">Virtual Presenz <span class="dot">·</span> Fragmentation Mechanics <span class="dot">·</span> Defense Tech</span>
             <div class="modal-body">
-                <p>Direct Ink Writing of soft matter is limited by cross-contamination during material switching. We designed a low-cost, high-throughput printhead that creates sharp voxels by minimizing residence time in the switching manifold.</p>
-                <h3>Optimization &amp; Performance</h3>
-                <ul>
-                    <li><strong>CFD:</strong> Ansys Fluent streamline analysis to locate and eliminate stagnant dead volumes.</li>
-                    <li><strong>Manufacturing:</strong> complex internal channels via high-resolution SLA (Rigid 10K resin).</li>
-                    <li><strong>Result:</strong> switching waste reduced 45%, with validated switching-quality metrics for viscoelastic inks.</li>
-                </ul>
+                <p>At Virtual Presenz I designed a ruggedized pneumatic lasso trigger mechanism and a novel autonomous breakaway shell for non-lethal defense, focused on reliable deployment and high-retention engagement of targets.</p>
+                <h3>Mechanical Engineering</h3>
+                <p>I engineered shell fragmentation using energy-dispersal principles so internal hooks deploy instantly on kinetic impact, validating latching reliability through iterative high-velocity tension testing.</p>
+                <h3>Optimization</h3>
+                <p>I tuned the trigger kinematics with dynamic simulation to ensure consistent deployment across firing pressures and environmental conditions.</p>
             </div>
         </div>
     </div>
 
     <div id="modal-soft" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
             <h2>Pneumatic Venus Flytrap</h2>
-            <span class="modal-meta">ME303 // Soft Robotics // Hyperelasticity</span>
+            <span class="modal-meta">ME303 <span class="dot">·</span> Soft Robotics <span class="dot">·</span> Hyperelasticity</span>
             <span class="team-tag">Team: Simon Kliger, Aryan Sood, Manuel Abitia.</span>
             <div class="modal-body">
-                <p>Inspired by the Venus flytrap's thigmonastic motion, we used pneumatic actuation for responsive motion in soft materials, moving from a teardrop design to a modular linear-chamber structure with a strain-limiting layer for predictable curvature.</p>
+                <p>Inspired by the thigmonastic motion of the Venus flytrap, we used pneumatic actuation for responsive motion in soft materials, moving from a teardrop design to a modular linear-chamber structure with a strain-limiting layer for predictable curvature.</p>
                 <h3>Hyperelastic Simulation</h3>
-                <p>Modeled in Abaqus with a Neo-Hookean material (shear modulus 27.6 kPa) and hybrid C3D8H elements for Ecoflex 00-30 incompressibility. Physical tests confirmed bending at 40.0 kPa within 5% of simulation.</p>
+                <p>We modeled the actuator in Abaqus with a Neo-Hookean material law (shear modulus 27.6 kPa) and hybrid C3D8H elements to capture Ecoflex 00-30 incompressibility. Physical testing confirmed upward bending at 40.0 kPa, within 5 percent of simulation.</p>
                 <h3>Mechatronics</h3>
-                <p>An Arduino Uno, L293D H-bridge, and ultrasonic sensing enable autonomous capture on object proximity.</p>
+                <p>An Arduino Uno, an L293D H-bridge, and ultrasonic sensing enable autonomous capture when an object approaches.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-nozzle" class="modal" onclick="closeModal(this)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>Multimaterial DIW Printhead</h2>
+            <span class="modal-meta">Microfluidics <span class="dot">·</span> Ansys Fluent CFD</span>
+            <span class="team-tag">Team: Aryan Sood and design cohort.</span>
+            <div class="modal-body">
+                <p>Direct ink writing of soft matter is limited by cross-contamination during material switching. We designed a low-cost, high-throughput printhead that creates sharp voxels by minimizing residence time in the switching manifold.</p>
+                <h3>Optimization and Performance</h3>
+                <ul>
+                    <li><strong>CFD.</strong> Ansys Fluent streamline analysis to locate and eliminate stagnant dead volumes.</li>
+                    <li><strong>Manufacturing.</strong> Complex internal channels realized by high-resolution SLA printing in Rigid 10K resin.</li>
+                    <li><strong>Result.</strong> Switching waste reduced by 45 percent, with validated switching-quality metrics for viscoelastic inks.</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div id="modal-prick" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
-            <h2>PRICK: Kyphoplasty Interface</h2>
-            <span class="modal-meta">MECENG 117 // Medical Device // FDA Class III</span>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>PRICK, Kyphoplasty Interface</h2>
+            <span class="modal-meta">MECENG 117 <span class="dot">·</span> Medical Device <span class="dot">·</span> FDA Class III</span>
             <span class="team-tag">Team: David Bui, Katelyn Lee, Masayuki Ohashi, Aryan Sood.</span>
             <div class="modal-body">
-                <p>Vertebral compression fractures affect 1.5 million people annually. We co-designed PRICK — a Pain-Relief Interface for Compression fractures with Kyphoplasty — delivering electro-stimulation through the vertebral cement.</p>
-                <h3>Innovation &amp; Regulatory Strategy</h3>
-                <p>We designed a biocompatible electrode array embedded in PMMA bone cement and mapped the FDA Class-III roadmap, identifying predicate devices and defining thermal-compatibility and DRG-stimulation test protocols.</p>
+                <p>Vertebral compression fractures affect 1.5 million people annually. We co-designed PRICK, a Pain-Relief Interface for Compression fractures with Kyphoplasty, delivering electro-stimulation through the vertebral cement.</p>
+                <h3>Innovation and Regulatory Strategy</h3>
+                <p>We designed a biocompatible electrode array embedded in PMMA bone cement and mapped the FDA Class III roadmap, identifying predicate devices and defining thermal-compatibility and dorsal-root-ganglion stimulation test protocols.</p>
                 <h3>My Contribution</h3>
-                <p>I led the background, proposed innovation (design and illustration), and the formatting of the technical report and video.</p>
+                <p>I led the background, the proposed innovation including design and illustration, and the formatting of the technical report and video.</p>
             </div>
         </div>
     </div>
 
     <div id="modal-tennis" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
             <h2>Autonomous Ball Launcher</h2>
-            <span class="modal-meta">Mechatronics // PID Control // ESP32</span>
+            <span class="modal-meta">Mechatronics <span class="dot">·</span> PID Control <span class="dot">·</span> ESP32</span>
             <span class="team-tag">Team: Aryan Sood, Fernando Medina, Masayuki Ohashi, Zeyad Alhomeida.</span>
             <div class="modal-body">
-                <p>We built a tennis-ball launcher with an automatic feeder: dual-flywheel propulsion on independent 12V DC motors and a motorized 90° indexing bucket.</p>
+                <p>We built a tennis-ball launcher with an automatic feeder: dual-flywheel propulsion on independent 12V DC motors and a motorized 90-degree indexing bucket.</p>
                 <h3>Mechatronic Architecture</h3>
-                <p>A cascaded position controller on an ESP32 handles indexing; the PID loop holds flywheel RPM through ball contact with optical-encoder feedback, plus autonomous jam-detection via feeder-motor current monitoring.</p>
+                <p>A cascaded position controller on an ESP32 handles indexing, the PID loop holds flywheel speed through ball contact using optical-encoder feedback, and autonomous jam detection monitors feeder-motor current spikes.</p>
                 <h3>Mechanical Fabrication</h3>
                 <ul>
-                    <li>3D-printed L-brackets and feeder buckets for lightweight structure.</li>
-                    <li>80/20 aluminum extrusion for a stiff, modular chassis.</li>
+                    <li>3D-printed brackets and feeder buckets for lightweight structure.</li>
+                    <li>An 80/20 aluminum-extrusion chassis for stiffness and modularity.</li>
                     <li>Rubber flywheels with preloaded shaft transmissions for maximum energy transfer.</li>
                 </ul>
             </div>
         </div>
     </div>
 
+    <div id="modal-narwhal" class="modal" onclick="closeModal(this)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>The Narwhal Bottle Opener</h2>
+            <span class="modal-meta">Stanford ME318 <span class="dot">·</span> 3-Axis CNC <span class="dot">·</span> Solo</span>
+            <span class="team-tag">A solo design and build for a Winter Olympics brief, machined from a single sub-eight-cubic-inch billet.</span>
+            <div class="modal-body">
+                <img src="images/narwhal.png" class="modal-hero" alt="The Narwhal bottle opener">
+                <p class="modal-cap">The finished Narwhal, machined with a scallop finishing pass that leaves an organic, skin-like micro-texture.</p>
+                <p>For a Winter Olympics theme I sketched curling stones, torches, ski cornices, and mascots before choosing the narwhal. A polar bear read as too blocky and awkward to hold; the narwhal gave me a continuous, fluid geometry that genuinely demands true 3-axis machining, which was exactly the challenge I wanted.</p>
+                <h3>Form and CAD</h3>
+                <p>I built the body from elliptical profiles lofted together, blending the tusk and tail into the torso and embossing the fins. Several 3D-printed prototypes let me dial in the form, the ergonomics, and how naturally it opens a bottle. I added subtle wave elements for grip, tilted the narwhal slightly to give the tusk a longer relief, and worked in machining fillets throughout.</p>
+                <h3>CAM and Machining</h3>
+                <ul>
+                    <li>Tuned a scallop finishing toolpath to leave a fine micro-texture that mimics organic skin, and verified every move cleared 0.35 inches above the stock bottom.</li>
+                    <li>Made the wave grips collinear so the part clamped safely for the second setup.</li>
+                    <li>Measured the H-value tool lengths for all five tools, balancing stickout for stiffness against clearance from the spindle.</li>
+                </ul>
+                <h3>Result and Reflection</h3>
+                <p>The finished part came out with a great machine finish and the features I wanted. I observed some chatter and chip marks and would update the tool lengths from probing data next time, since worn tools ran slightly short and shallow, which also kept the engraving from fully forming. The project was a strong introduction to the constraints of producing precise organic forms on a 3-axis machine, and it sharpened how I think about finishing toolpaths and safe operation. Next I want to push into tighter tolerancing and dynamic features such as hinges and joints.</p>
+            </div>
+        </div>
+    </div>
+
     <div id="modal-cast" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
-            <h2>Time &amp; Tide: Watch Display</h2>
-            <span class="modal-meta">ME203 // Sand Casting // 5-Axis CNC</span>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>Time and Tide Watch Display</h2>
+            <span class="modal-meta">ME203 <span class="dot">·</span> Sand Casting <span class="dot">·</span> 5-Axis CNC</span>
             <div class="modal-body">
-                <p>I realized a luxury timepiece display sculpture balancing aesthetics with manufacturing constraints, adapting an initially uncastable design for sand-casting via removable patterns and draft-angle optimization.</p>
+                <p>I realized a luxury timepiece display sculpture by balancing aesthetics against manufacturing constraints, adapting an initially uncastable design for sand casting through removable patterns and draft-angle optimization.</p>
                 <h3>Technical Process</h3>
                 <ul>
-                    <li><strong>Casting:</strong> sand-cast bronze from a shellac-coated 3D-printed pattern.</li>
-                    <li><strong>Machining:</strong> brass base milled with a 3/16" ball-end mill for the wave pattern and a 1/4" corner-rounder for fillets.</li>
-                    <li><strong>Assembly:</strong> switched to custom threaded fasteners after thermal analysis showed brazing would scorch the ash-wood boat.</li>
+                    <li><strong>Casting.</strong> Sand-cast bronze from a shellac-coated 3D-printed pattern.</li>
+                    <li><strong>Machining.</strong> A brass base milled with a 3/16 inch ball-end mill for the wave pattern and a 1/4 inch corner-rounder for the fillets.</li>
+                    <li><strong>Assembly.</strong> I switched to custom threaded fasteners after thermal analysis showed that brazing would scorch the ash-wood boat.</li>
                 </ul>
             </div>
         </div>
@@ -403,58 +459,58 @@
 
     <div id="modal-watch" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
             <h2>Submariner-Homage Diver Build</h2>
-            <span class="modal-meta">Horology // Precision Assembly // Dive-Watch Regulation</span>
+            <span class="modal-meta">Horology <span class="dot">·</span> Precision Assembly <span class="dot">·</span> Dive-Watch Regulation</span>
             <div class="modal-body">
-                <p>I hand-built a dive-style mechanical watch in the spirit of the classic Submariner. I chose a Seiko NH35A automatic movement for reliability and assembled it into a 316L stainless case with a ceramic dive bezel and sapphire crystal.</p>
+                <p>I hand-built a dive-style mechanical watch in the spirit of the classic Submariner. I chose a Seiko NH35A automatic movement for reliability and assembled it into a 316L stainless case with a ceramic dive bezel and a sapphire crystal.</p>
                 <h3>Precision Engineering</h3>
-                <p>Assembled in a dust-controlled environment, I regulated the balance to ±5 seconds/day with a 0.1 ms beat error and built a triple O-ring gasket stack for reliable, dive-grade water resistance.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-anemo" class="modal" onclick="closeModal(this)">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
-            <h2>Predictive Wind Modeling</h2>
-            <span class="modal-meta">Instrumentation // Fluid Dynamics // ME103</span>
-            <span class="team-tag">Team: Aryan Sood, Julius Tereck, Matthew Kang, Yeiji Lee.</span>
-            <div class="modal-body">
-                <p>We calibrated a vertical-axis dual-blade anemometer in a wind tunnel to build a predictive wind-speed model across 5–22 m/s and varying angles of attack.</p>
-                <h3>Modeling Results</h3>
-                <p>Analytical drag models overestimated velocity due to unmodeled friction, while our linear regression performed excellently across the full range (R² &gt; 0.98) — a clean demonstration that empirical modeling can beat first-principles approximations for low-cost mechanical sensors.</p>
+                <p>Working in a dust-controlled environment, I regulated the balance to within 5 seconds per day with a 0.1 millisecond beat error, and built a triple O-ring gasket stack for reliable, dive-grade water resistance.</p>
             </div>
         </div>
     </div>
 
     <div id="modal-guitar" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
             <h2>Algorithmic Guitar Stand</h2>
-            <span class="modal-meta">ME227 // Generative Design // Fusion 360</span>
+            <span class="modal-meta">ME227 <span class="dot">·</span> Generative Design <span class="dot">·</span> Fusion 360</span>
             <div class="modal-body">
-                <p>I used generative design to create an optimized structural support for electric guitars, minimizing mass while holding a Factor of Safety suitable for high-value instruments.</p>
+                <p>I used generative design to create an optimized structural support for electric guitars, minimizing mass while holding a factor of safety suitable for high-value instruments.</p>
                 <h3>Generative Parameters</h3>
-                <p>I defined a 40 lbf remote-force load case with directional placement bias and fed in custom Bambu PLA material data (2–6% elongation at break) so the solver respected real additive-manufacturing limits.</p>
+                <p>I defined a 40 lbf remote-force load case with directional placement bias and fed in measured Bambu PLA material data, including 2 to 6 percent elongation at break, so the solver respected real additive-manufacturing limits.</p>
                 <h3>Outcome</h3>
-                <p>The final design reached a functional FoS of 6–7 with 15% sparse infill; physical testing showed only 0.009" deflection under full load, validating the FEA.</p>
+                <p>The final design reached a functional factor of safety of 6 to 7 with 15 percent sparse infill. Physical testing showed only 0.009 inches of deflection under full load, validating the FEA.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-anemo" class="modal" onclick="closeModal(this)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>Predictive Wind Modeling</h2>
+            <span class="modal-meta">Instrumentation <span class="dot">·</span> Fluid Dynamics <span class="dot">·</span> ME103</span>
+            <span class="team-tag">Team: Aryan Sood, Julius Tereck, Matthew Kang, Yeiji Lee.</span>
+            <div class="modal-body">
+                <p>We calibrated a vertical-axis dual-blade anemometer in a wind tunnel to build a predictive wind-speed model across 5 to 22 meters per second and varying angles of attack.</p>
+                <h3>Modeling Results</h3>
+                <p>Analytical drag models overestimated velocity because of unmodeled friction, while our linear regression performed excellently across the full range with an R-squared above 0.98. It was a clean demonstration that empirical modeling can outperform first-principles approximations for low-cost mechanical sensors.</p>
             </div>
         </div>
     </div>
 
     <div id="modal-flicc" class="modal" onclick="closeModal(this)">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">CLOSE</button>
-            <h2>Flicc: Smart Switch Actuator</h2>
-            <span class="modal-meta">ME110 // IoT // Product Realization</span>
+            <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
+            <h2>Flicc, Smart Switch Actuator</h2>
+            <span class="modal-meta">ME110 <span class="dot">·</span> IoT <span class="dot">·</span> Product Realization</span>
             <span class="team-tag">Team: Alan Chen, Katelyn Lee, Fernando Medina, Adrian Mota, Sean Peng, Aryan Sood.</span>
             <div class="modal-body">
-                <p>We developed Flicc, a non-intrusive retrofit that mechanically toggles existing wall switches — low-cost home automation with no rewiring.</p>
-                <h3>Mechatronics &amp; IoT</h3>
-                <p>We designed micro-servo linkages for the high torque of standard toggles, with an ESP32 over MQTT for Alexa voice control.</p>
+                <p>We developed Flicc, a non-intrusive retrofit that mechanically toggles existing wall switches, bringing low-cost home automation with no rewiring.</p>
+                <h3>Mechatronics and IoT</h3>
+                <p>We designed micro-servo linkages for the high torque of standard toggles, with an ESP32 over MQTT for Amazon Alexa voice control.</p>
                 <h3>Design for Manufacturing</h3>
-                <p>The housing was designed for injection molding with proper draft and uniform walls, backed by a full economic analysis and Business Model Canvas.</p>
+                <p>The housing was designed for injection molding with proper draft and uniform walls, backed by a full economic analysis and a Business Model Canvas.</p>
             </div>
         </div>
     </div>
