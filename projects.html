@@ -28,6 +28,7 @@
         </div>
         <div class="sidebar-bottom">
             <a href="mailto:asood02@stanford.edu">asood02@stanford.edu</a>
+            <a href="https://www.linkedin.com/in/aryansood" target="_blank" rel="noopener">linkedin.com/in/aryansood</a>
             <a href="https://github.com/asood02" target="_blank" rel="noopener">github.com/asood02</a>
             <span class="loc">Stanford, CA</span>
         </div>
@@ -38,173 +39,125 @@
         <h1 class="page-title reveal">Projects</h1>
         <p class="page-intro reveal">Ordered by engineering depth, from flight-qualified hardware and precision machining to mechatronics and product design. Select any project for the full process.</p>
 
-        <div class="work-list">
+        <div class="work-grid">
 
-            <div class="work-item reveal" onclick="openModal('modal-curios')">
-                <div class="work-num">01</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-curios')">
+                <div class="work-shot"><img src="images/cubesat.jpg" alt="CuRIOS CubeSat"></div>
                     <span class="work-cat">Aerospace <span class="dot">·</span> Flight Hardware</span>
                     <h3 class="work-title">CuRIOS Detector Interfaces</h3>
                     <p class="work-desc">Kinematic mounting and thermal isolation integrating a Sony IMX455 detector into a 16U CubeSat, qualified for 12G launch loads and thermal vacuum.</p>
                 </div>
-                <div class="work-thumb"><img src="images/cubesat.jpg" alt="CuRIOS CubeSat"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-primedrive')">
-                <div class="work-num">02</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-primedrive')">
+                <div class="work-shot"><img src="images/primedrive_hero.jpg" alt="PrimeDrive in-transit concierge unit"></div>
                     <span class="work-cat">Product Design <span class="dot">·</span> ME310 Capstone</span>
                     <h3 class="work-title">PrimeDrive, In-Transit Concierge</h3>
                     <p class="work-desc">Industry-sponsored capstone. I led the mechanical architecture of an in-car concierge unit that completes luxury hotel check-in during the ride.</p>
                 </div>
-                <div class="work-thumb"><img src="images/primedrive_hero.jpg" alt="PrimeDrive in-transit concierge unit"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-baffles')">
-                <div class="work-num">03</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-baffles')">
+                <div class="work-shot"><img src="images/baffle.jpg" alt="Deployable baffle"></div>
                     <span class="work-cat">Aerospace <span class="dot">·</span> Mechanisms</span>
                     <h3 class="work-title">Deployable Light-Shield Baffles</h3>
                     <p class="work-desc">A zero-backlash, spring-driven deployment mechanism validated by nonlinear Abaqus FEA and space-qualified through thermal-vacuum cycling.</p>
                 </div>
-                <div class="work-thumb"><img src="images/baffle.jpg" alt="Deployable baffle"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-alef')">
-                <div class="work-num">04</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-alef')">
+                <div class="work-shot"><img src="images/alef.jpg" alt="Alef eVTOL"></div>
                     <span class="work-cat">Composites <span class="dot">·</span> Flight Prototype</span>
                     <h3 class="work-title">Alef eVTOL Prototype</h3>
                     <p class="work-desc">Carbon-fiber manufacturing by resin infusion and suspension validation for a flying-car flight prototype at Alef Aeronautics.</p>
                 </div>
-                <div class="work-thumb"><img src="images/alef.jpg" alt="Alef eVTOL"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-lineage')">
-                <div class="work-num">05</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-lineage')">
+                <div class="work-shot"><img src="images/lineage_final.png" alt="Lineage watch box"></div>
                     <span class="work-cat">Precision Machining <span class="dot">·</span> ME318</span>
                     <h3 class="work-title">Vansh, the Lineage Watch Box</h3>
                     <p class="work-desc">A CNC-machined aluminum and ABS watch box carrying a Suryavanshi mandala. Multi-material toolpathing, precision fits, and a sandblasted marble finish.</p>
                 </div>
-                <div class="work-thumb"><img src="images/lineage_final.png" alt="Lineage watch box"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-lasso')">
-                <div class="work-num">06</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-lasso')">
+                <div class="work-shot"><img src="images/lasso.jpg" alt="Pneumatic lasso"></div>
                     <span class="work-cat">Defense Tech <span class="dot">·</span> Dynamics</span>
                     <h3 class="work-title">Pneumatic Lasso &amp; Breakaway Shell</h3>
                     <p class="work-desc">A ruggedized pneumatic trigger mechanism and an energy-dispersal breakaway shell for non-lethal defense, tuned through dynamic simulation.</p>
                 </div>
-                <div class="work-thumb"><img src="images/lasso.jpg" alt="Pneumatic lasso"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-soft')">
-                <div class="work-num">07</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-soft')">
+                <div class="work-shot"><img src="images/flytrap.jpg" alt="Soft robotic flytrap"></div>
                     <span class="work-cat">Soft Robotics <span class="dot">·</span> ME303</span>
                     <h3 class="work-title">Pneumatic Venus Flytrap</h3>
                     <p class="work-desc">A hyperelastic Ecoflex actuator with autonomous proximity capture, modeled in Abaqus with a Neo-Hookean material law.</p>
                 </div>
-                <div class="work-thumb"><img src="images/flytrap.jpg" alt="Soft robotic flytrap"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-nozzle')">
-                <div class="work-num">08</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-nozzle')">
+                <div class="work-shot"><img src="images/nozzle.jpg" alt="DIW nozzle"></div>
                     <span class="work-cat">Microfluidics <span class="dot">·</span> CFD</span>
                     <h3 class="work-title">Multimaterial DIW Printhead</h3>
                     <p class="work-desc">A CFD-optimized direct-ink-writing nozzle for viscoelastic material voxelation that reduced switching waste by 45 percent.</p>
                 </div>
-                <div class="work-thumb"><img src="images/nozzle.jpg" alt="DIW nozzle"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-prick')">
-                <div class="work-num">09</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-prick')">
+                <div class="work-shot"><img src="images/prick.jpg" alt="PRICK medical device"></div>
                     <span class="work-cat">Medical Device <span class="dot">·</span> MECENG 117</span>
                     <h3 class="work-title">PRICK, Kyphoplasty Interface</h3>
                     <p class="work-desc">Electro-stimulation embedded in vertebral bone cement for post-operative pain relief, with a full FDA Class III regulatory roadmap.</p>
                 </div>
-                <div class="work-thumb"><img src="images/prick.jpg" alt="PRICK medical device"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-tennis')">
-                <div class="work-num">10</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-tennis')">
+                <div class="work-shot"><img src="images/launcher.jpg" alt="Ball launcher"></div>
                     <span class="work-cat">Mechatronics <span class="dot">·</span> PID Control</span>
                     <h3 class="work-title">Autonomous Ball Launcher</h3>
                     <p class="work-desc">A dual-flywheel launcher with an automatic feeder, cascaded PID control, and current-based jam detection on an ESP32.</p>
                 </div>
-                <div class="work-thumb"><img src="images/launcher.jpg" alt="Ball launcher"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-narwhal')">
-                <div class="work-num">11</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-narwhal')">
+                <div class="work-shot"><img src="images/narwhal.png" alt="Narwhal bottle opener"></div>
                     <span class="work-cat">Precision Machining <span class="dot">·</span> ME318</span>
                     <h3 class="work-title">The Narwhal Bottle Opener</h3>
                     <p class="work-desc">A continuous organic form chosen to demand true 3-axis machining, finished with a scallop toolpath that mimics skin texture.</p>
                 </div>
-                <div class="work-thumb"><img src="images/narwhal.png" alt="Narwhal bottle opener"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-cast')">
-                <div class="work-num">12</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-cast')">
+                <div class="work-shot"><img src="images/stand.jpg" alt="Time and Tide watch display"></div>
                     <span class="work-cat">Manufacturing <span class="dot">·</span> ME203</span>
                     <h3 class="work-title">Time and Tide Watch Display</h3>
                     <p class="work-desc">A luxury display sculpture in sand-cast bronze and 5-axis-milled brass, with an ash-wood boat and custom threaded interfaces.</p>
                 </div>
-                <div class="work-thumb"><img src="images/stand.jpg" alt="Time and Tide watch display"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-watch')">
-                <div class="work-num">13</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-watch')">
+                <div class="work-shot"><img src="images/watch_build.jpg" alt="Submariner homage build"></div>
                     <span class="work-cat">Horology</span>
                     <h3 class="work-title">Submariner-Homage Diver</h3>
                     <p class="work-desc">A hand-assembled dive watch on a Seiko NH35A movement, regulated to within 5 seconds per day with dive-grade sealing.</p>
                 </div>
-                <div class="work-thumb"><img src="images/watch_build.jpg" alt="Submariner homage build"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-guitar')">
-                <div class="work-num">14</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-guitar')">
+                <div class="work-shot"><img src="images/guitar_stand.jpg" alt="Generative guitar stand"></div>
                     <span class="work-cat">Generative Design <span class="dot">·</span> ME227</span>
                     <h3 class="work-title">Algorithmic Guitar Stand</h3>
                     <p class="work-desc">A Fusion 360 generative-design structure optimized for a 40 lbf load case using measured PLA material data.</p>
                 </div>
-                <div class="work-thumb"><img src="images/guitar_stand.jpg" alt="Generative guitar stand"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-anemo')">
-                <div class="work-num">15</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-anemo')">
+                <div class="work-shot"><img src="images/anemo.jpg" alt="Anemometer modeling"></div>
                     <span class="work-cat">Instrumentation <span class="dot">·</span> ME103</span>
                     <h3 class="work-title">Predictive Wind Modeling</h3>
                     <p class="work-desc">Wind-tunnel calibration of a vertical-axis anemometer, with a regression model reaching an R-squared above 0.98.</p>
                 </div>
-                <div class="work-thumb"><img src="images/anemo.jpg" alt="Anemometer modeling"></div>
-            </div>
 
-            <div class="work-item reveal" onclick="openModal('modal-flicc')">
-                <div class="work-num">16</div>
-                <div class="work-main">
+            <div class="work-card reveal" onclick="openModal('modal-flicc')">
+                <div class="work-shot"><img src="images/flicc.jpg" alt="Flicc smart switch"></div>
                     <span class="work-cat">Product Design <span class="dot">·</span> IoT</span>
                     <h3 class="work-title">Flicc, Smart Switch Actuator</h3>
                     <p class="work-desc">A non-intrusive retrofit that mechanically toggles existing wall switches, with ESP32 and MQTT for voice control.</p>
                 </div>
-                <div class="work-thumb"><img src="images/flicc.jpg" alt="Flicc smart switch"></div>
-            </div>
 
         </div>
 
         <footer class="page-footer">
             <span>Aryan Sood, 2026</span>
-            <span><a href="mailto:asood02@stanford.edu">Email</a> &nbsp; <a href="https://github.com/asood02" target="_blank" rel="noopener">GitHub</a></span>
+            <span><a href="mailto:asood02@stanford.edu">Email</a> &nbsp; <a href="https://www.linkedin.com/in/aryansood" target="_blank" rel="noopener">LinkedIn</a> &nbsp; <a href="https://github.com/asood02" target="_blank" rel="noopener">GitHub</a></span>
         </footer>
     </main>
 
