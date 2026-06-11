@@ -52,7 +52,7 @@
                 <div class="work-shot"><img src="images/primedrive_hero.jpg" alt="PrimeDrive in-transit concierge unit"></div>
                     <span class="work-cat">Product Design <span class="dot">·</span> ME310 Capstone</span>
                     <h3 class="work-title">PrimeDrive, In-Transit Concierge</h3>
-                    <p class="work-desc">Industry-sponsored capstone. I led the mechanical architecture of an in-car concierge unit that completes luxury hotel check-in during the ride.</p>
+                    <p class="work-desc">Industry-sponsored ME310 capstone. With a teammate I co-led the mechanical design and built the in-vehicle check-in module, including its stepper-driven keycard dispenser.</p>
                 </div>
 
             <div class="work-card reveal" onclick="openModal('modal-baffles')">
@@ -187,26 +187,33 @@
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="close-btn" onclick="closeModal(this.closest('.modal'))">Close</button>
             <h2>PrimeDrive, the In-Transit Concierge</h2>
-            <span class="modal-meta">Stanford ME310 <span class="dot">·</span> Industry-Sponsored Capstone <span class="dot">·</span> Product Realization</span>
-            <span class="team-tag">Team Hotels (ME310 cohort). I led the mechanical design and hardware integration; teammates drove UX, software, and the staff and guest interfaces.</span>
+            <span class="modal-meta">Stanford ME310 2025 to 2026 <span class="dot">·</span> Industry-Sponsored Capstone <span class="dot">·</span> Mechanical Co-Lead</span>
+            <span class="team-tag">Team VisionX (Team Hotels): Aryan Sood, Himansu Pathak, and Junyu Zhou at Stanford with NUS DTI partners Gavin Tey, Ilham Ridzuan, Jolie Koh, and Lim Soong En, sponsored by Venture. I co-led the mechanical design and build; Junyu led electronics and software.</span>
             <div class="modal-body">
-                <img src="images/primedrive_hero.jpg" class="modal-hero" alt="PrimeDrive in-transit concierge unit, final hero shot">
-                <p class="modal-cap">The final PrimeDrive concierge unit, presented to our industry partner.</p>
-                <p>Luxury hotels promise a seamless, personal arrival, yet the experience often begins with a queue. Check-in waits can reach 20 to 50 minutes, and guest satisfaction drops by roughly half once a wait exceeds five minutes. Our team reframed the problem around the one calm, controlled moment that already exists before the lobby, the chauffeured car ride, which over 85 percent of luxury properties already provide. PrimeDrive is an in-vehicle concierge unit that completes check-in in transit, so the guest steps out of the car already checked in, keyed in, and greeted by name.</p>
-                <h3>My Role, Mechanical Architecture</h3>
-                <p>I owned the physical product: the concierge unit that lives in the rear cabin and carries every interactive subsystem. I developed the full enclosure in CAD and drove it from concept to a working, demonstrated prototype, integrating a touchscreen, a 4K camera for the live concierge link, an identity and QR scanner, an integrated payment terminal, and an NFC room-key module into one cohesive, premium housing.</p>
+                <img src="images/primedrive_hero.jpg" class="modal-hero" alt="PrimeDrive in-transit concierge module">
+                <p class="modal-cap">The finished PrimeDrive module, presented to our corporate partner at EXPE.</p>
+                <p>Accessible-luxury hotels such as Westin, Hyatt Regency, AC Hotels, and Kimpton promise a calm arrival, but guests who have already completed mobile check-in still dead-end in a lobby queue just to pick up a key, and idle waiting is perceived as up to 2.5 times longer than it is. After field observation across more than thirty hotels in five countries and three quarters of iterative prototyping, our team moved check-in into the chauffeured ride from the airport. A live remote concierge appears on screen, hosts identity verification, payment, and room assignment in transit, and a personalized keycard is in the guest's hand by the time the car reaches the door.</p>
+
+                <h3>My Role, Mechanical Design and Build</h3>
+                <p>With Himansu Pathak I co-led the mechanical design, testing and iteration, card-tray actuation, motor selection, and the manufacturing and assembly of both builds. I cut and formed the sheet-metal body, and we applied the leather finish together. Junyu Zhou led the electronics and software.</p>
                 <ul>
-                    <li><strong>Deployable display.</strong> An articulating, stow-and-present screen arm folds the unit away discreetly and presents to a seated rear passenger at a comfortable viewing angle, packaged around real seat-back geometry.</li>
-                    <li><strong>Modular hardware bay.</strong> A serviceable internal chassis locates the camera, scanner, payment reader, and key module on a common datum, with routed cable management and ventilation for the compute and screen.</li>
-                    <li><strong>Key issuance.</strong> I integrated NFC tap-to-program and physical key-card handoff into the fascia so the handover feels intentional and tamper-evident.</li>
-                    <li><strong>Mounting and DFM.</strong> I designed a vehicle-agnostic mounting interface and detailed the housing for low-volume manufacture, iterating through 3D-printed prototypes.</li>
+                    <li><strong>Packaging.</strong> The module is roughly 24 by 9 by 9 inches and installs in the volume between the two front seats of a sedan or SUV with no permanent vehicle modification, presenting a 15.6-inch portrait touchscreen at a seated rear passenger's eye level. We validated the envelope and component placement first in pink insulation foam, then with cardboard and 3D-printed mockups.</li>
+                    <li><strong>Two builds.</strong> A fully functional unit framed in 80/20 aluminum T-slot extrusion, faced with laser-cut walnut-finish plywood and in-house wooden trim, and a production-intent unit with a sheet-metal body that I waterjet cut and formed on a press brake, then leather-wrapped.</li>
+                    <li><strong>Keycard mechanism.</strong> The most mechanically distinctive subsystem is a two-stage stepper-driven dispenser fed from a cartridge of up to 50 blank cards. A finger toleranced to engage exactly one card advances it onto a tray carrying the NFC encoder, which writes the room credential; a second stepper then drives the tray out through the front face to present the card.</li>
+                    <li><strong>Tray presentation over slot-and-drop.</strong> We deliberately accepted the extra mechanical complexity of an extending tray, because dropping a card from a slot reads as a vending machine while presenting it on a tray reads as service.</li>
                 </ul>
-                <img src="images/primedrive_assembly.png" class="modal-hero" alt="PrimeDrive unit assembly and subsystem layout">
-                <p class="modal-cap">Assembly view: the touchscreen, camera, scanner, payment, and NFC key modules packaged on a common chassis.</p>
-                <h3>Prototyping the Form Factor</h3>
-                <p>Before converging on the seat-back console, I helped build and evaluate a mobile-robot unit and a drone hand-off to pressure-test where and how to intercept the guest. Journey mapping showed the car ride was the highest-value, lowest-friction moment, and the fixed in-cabin unit won on reliability, ergonomics, and trust.</p>
+
+                <img src="images/primedrive_assembly.png" class="modal-hero" alt="PrimeDrive module assembly and subsystems">
+                <p class="modal-cap">The integrated module: interaction screen and 4K camera, contactless NFC payment, and the keycard issuance mechanism.</p>
+
+                <h3>Earning the Design: the Friction-Wheel Dispenser</h3>
+                <p>The dispenser earned its final form. We first built a friction-wheel feeder, prototyped quickly with direct-drive servos on LEGO rods, that pressed wheels against the bottom card in a cartridge. It fed continuously but failed at the task that actually mattered, dispensing exactly one card on demand: the servos were not position-controllable, so we had to meter by run time and speed, and grip varied with every smooth card surface, slipping or double-feeding. That failure drove the move to a position-controlled stepper with a single-card finger and cartridge.</p>
+
+                <h3>From Concept to Module</h3>
+                <p>We reached the in-vehicle module by ruling out earlier directions, including a lobby check-in robot and an autonomous drone with a luggage robot, then an in-vehicle simulation. The winter prototype proved the workflow with a folding laptop and an exposed acrylic scanner box; the spring decision was to stop adapting found hardware and design one integrated enclosure that reads as in-cabin furniture rather than a demonstration rig.</p>
+
                 <h3>Outcome</h3>
-                <p>We delivered a functional prototype demonstrating the complete in-transit flow, from video concierge through document scan, payment, and key issuance, and presented PrimeDrive to our industry partner. The concept extends naturally to shuttles and group pickups, cross-property partnerships, and airline and cruise transfers.</p>
+                <p>We delivered both a fully functional unit and a finished, production-intent unit, demonstrating the complete in-transit flow over a WebRTC concierge link, with passport capture, contactless NFC payment, and onboard keycard encoding tied into the hotel property-management system over a cellular uplink, and presented PrimeDrive to our partner at EXPE.</p>
             </div>
         </div>
     </div>
